@@ -11,7 +11,7 @@ import json
 import paramiko
 
 
-sshlist = {"RASPBERRY 1":["10.0.0.27","Cry0M3tric","hav0k"], #SSH List for different machines, configure to your liking
+sshlist = {"RASPBERRY 1":["INSERT IP","INSERT PASSWORD","INSERT USERNAME"], #SSH List for different machines, configure to your liking
 "RASPBERRY 2":["IP2","PASSWORD2","USERNAME2"],
 }
 
@@ -80,8 +80,8 @@ def speechGoogle(): #Accurate, fast speech recognizer, waits for Tina's name
     Google()
 
 def sendmail(thelist): #Sends Emails Based on What's in List: Make it check for IP, add different email options
-    me = "yohance.clarkii@enlitellc.com"
-    you = "yohance.clarkii@enlitellc.com"
+    me = "INSERT EMAIL SENDING ACCOUNT"
+    you = "INSERT EMAIL DESTINATION"
 
 
     msg = MIMEMultipart()
@@ -100,7 +100,7 @@ def sendmail(thelist): #Sends Emails Based on What's in List: Make it check for 
     server.sendmail(me,you,text)
     server.quit()
 
-def talkBack(Talk): #Responses for cleaner code
+def talkBack(Talk): #Predefined Responses for cleaner code
     if Talk == "GOOD":
         tts = gTTS(text="Hello, How Can I Help You?", lang="en")
         tts.save("greet.mp3")
@@ -150,7 +150,7 @@ def Google(): #Google Speech Recognizer for running commands
                 ssh("SSH",address=sshlist["RASPBERRY 1"][0],password=sshlist["RASPBERRY 1"][1],username=sshlist["RASPBERRY 1"][2])
                 break  #Make Dynamic
 
-            elif "QUOTE" or "GIVE ME" in  recognized_Audio:
+            elif "QUOTE" or "GIVE ME" in  recognized_Audio: #Runs ssh Function: Fix
                 Quote()
                 print("HIII")
                 break
