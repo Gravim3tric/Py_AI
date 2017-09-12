@@ -315,11 +315,6 @@ def ssh(protocol, address, password, username): #Clean Up: Find Better Method
         tts.save("greet.mp3")
         os.system("mpg321 greet.mp3")
         talkBack("DONE")
-        break
-
-except Exception as exp:
-    talkBack("ERROR")
-    talkBack("DONE")
 #
 
 def googleSearch():
