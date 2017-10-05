@@ -4,33 +4,33 @@ Talk to your computer and have it do stuff for you!
 In the main TT1.py file there a numerous different tasks that your Computer can do. It's designed to run on linux machines, with planned support for Windows machines further down the line.
 
 # Files and Functions (Predefined)
-### extra.py 
+### mods/extra.py 
 #### introduction()
 This is a quick introduction in the extra.py file. It's used to tell the user who the A.I is as well as it's function.
 #### quote()
 This function uses the forismatic.com API and tells you a randomly selected Quote.
 
-### ipSend.py
+### mods/ipSend.py
 #### ipSend()
 Gets your IP ADDRESS and tells you both your public and private IP. Then asks if you want both of them sent to you by email. (For Configuration of email, refer to sendMail.py)
 
-### listen.py
+### mods/listen.py
 #### listen()
 Initiates the microphone and runs google's speech recognition API against the captured input. Returns a string of the recognized speech. This is what is used to talk to your A.I.
 
-### say.py
+### mods/say.py
 #### say(Talk, TimeOfDay=None,slow=False)
 Get's your A.I to start talking. The "Talk" parameter is used to tell the A.I what you want it to say. The "TimeOfDay" parameter allows for you to make responses dynamic based upon time of day. Finally, the "slow" parameter allows for you to define if you want the A.I to say something slow as opposed to normal speed. This can be set to either Boolean.
 
-### sendMail.py
+### mods/sendMail.py
 #### sendMail(thelist)
 Currently sends mail pertaining to a list given off from the ipSend() function. Here, you can customize your email address as well as message formatting.
 
-### sqlStart.py
+### mods/sqlStart.py
 #### databaseSSH()
 Used to ssh into other machines. Reads from the CSV file in the "data" folder and copies each IP entry to a database file that's also written to the "data" folder. The CSV only is used to append entries. If you want to remove an entry, you have to delete the database file. Returns a list of each entry in the database.
 
-### ssh.py
+### mods/ssh.py
 #### ssh(available_SSH)
 Reads from the list that was returned by the databaseSSH() function and tells you the IP addresses you have available, to ssh into. Then asks which from the list you would want to SSH into.
 
