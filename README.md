@@ -4,7 +4,7 @@ Talk to your computer and have it do stuff for you!
 In the main TT1.py file there a numerous different tasks that your Computer can do. It's designed to run on linux machines, with planned support for Windows machines further down the line.
 
 # Files and Functions (Predefined)
-### extra.py: 
+### extra.py 
 #### introduction()
 This is a quick introduction in the extra.py file. It's used to tell the user who the A.I is as well as it's function.
 #### quote()
