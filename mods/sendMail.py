@@ -3,8 +3,8 @@ from email.mime.text import MIMEText
 import smtplib
 
 def sendMail(thelist): #Sends Emails Based on What's in List: Make it check for IP, add different email options
-    me = "yohance.clarkii@enlitellc.com"
-    you = "yohance.clarkii@enlitellc.com"
+    me = "YOUR-EMAIL-ADDRESS"
+    you = "TARGET-EMAIL-ADDRESS"
 
 
     msg = MIMEMultipart()
@@ -18,7 +18,7 @@ def sendMail(thelist): #Sends Emails Based on What's in List: Make it check for 
 
     server = smtplib.SMTP("smtp.gmail.com", 587)
     server.starttls()
-    server.login(me,"12345678")
+    server.login(me,"YOURGMAILPASSWORD")
     text = msg.as_string()
     server.sendmail(me,you,text)
     server.quit()
