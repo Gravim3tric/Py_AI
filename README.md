@@ -48,12 +48,12 @@ Sits and waits for you to say the keyword("Hey Tina", or "Hello Tina").Then it m
 Uses the google speech recognition API and this is where you tell your A.I what you want to do. This is the glue that keeps each piece working together. If what you say has a certain keyword, then the corresponding function will run.
 
 # Default Keywords
-TEMPERATURE -- temp()
-ADDRESS -- ipSend()
-SSH -- ssh(available_SSH)
-QUOTE -- quote()
-"TEST" and "HAT" -- hatTest()
-"MY NAME" or "INTRODUCE" -- introduction()
+#### TEMPERATURE -- temp()
+#### ADDRESS -- ipSend()
+#### SSH -- ssh(available_SSH)
+#### QUOTE -- quote()
+#### "TEST" and "HAT" -- hatTest()
+#### "MY NAME" or "INTRODUCE" -- introduction()
 
 # Future
 All of this is editable. If you would like further additions, newer features, or have any ideas, feel free to email me at gravim3tric@outlook.com. Alternatively, you can download the source code yourself, and add more to the "mods" folder where each function is written, then update the main TT1.py file so you can assign that function a keyword.
